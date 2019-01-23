@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost;DatabaseName=flyway-demo
+    username: sacloud
+    password: L34KwyMVDhFwdG8SXHL1
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    properties:
+      hibernate:
+        default_schema: bar
+  flyway:
+    enabled: false
+    schemas: foo, bar, es, mx
